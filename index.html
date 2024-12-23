@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winny's - Portfolio</title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        /* Header */
+        header {
+            background: #004080;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #00509e;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Section */
+        section {
+            width: 85%;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 50px;
+            color: #004080;
+            border-bottom: 2px solid #00509e;
+            padding-bottom: 5px;
+        }
+
+        /* Project Section */
+        .project {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .project h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .project p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007BFF;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        #about h3 {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007BFF;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        /* Collapsible Section */
+        .collapsible-btn {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px 15px;
+            font-size: 1rem;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .collapsible-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .image-gallery {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #004080;
+            color: white;
+            font-size: 0.9rem;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Etchike H.W Lyonnais</h1>
+        <p>Python Developer | Full Stack Dev</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Winny, a young Cameroonian 🇨🇲 of 20 years, passionate about technology. I speak English, French, and Python 😄. If you are looking for a Python developer, you already found one!</p>
+    
+    <h3>Background</h3>
+    <p>Coming from a poor background with many brothers and sisters, life has never been easy. I truly appreciate any help you can offer. Thank you for your support in advance!</p>
+    
+    <h3>My Journey</h3>
+    <p>I started programming in Python when I was in Form 5. Since then, I’ve worked on hundreds of personal projects, many of which were flops or were abandoned for diverse reasons. I had the opportunity to work as a freelancer for Coveriot in Cameroon. Although I haven't worked online yet, I find it exciting and hope to collaborate with you!</p>
+    
+    <h3>My Aims</h3>
+    <ul>
+        <li>Achieve nothing less than becoming a billionaire</li>
+        <li>Change the world by bringing new technology</li>
+        <li>Make everyone's life easier</li>
+    </ul>
+    
+    <h3>What I Like</h3>
+    <ul>
+        <li>Quantum physics</li>
+        <li>Programming</li>
+        <li>Aeronautics and Aerospace</li>
+    </ul>
+    
+    <h3>My Hobbies</h3>
+    <ul>
+        <li>Playing around with electronics and programming</li>
+        <li>Watching Anime</li>
+        <li>Playing video games</li>
+        <li>Thinking of uncommon events for fun</li>
+    </ul>
+        
+    <h3>Education</h3>
+        <h4>GBPYS Yaounde</h4>
+            <p>Certificatr obtained : <strong>Advanced Level</strong></p>
+            
+        <h4>Simplilearn</h4>
+            <p>Certificatr obtained : <strong>Python certificate</strong></p>
+            <embed src="static/python.pdf" width="100%" height="200px" type="application/pdf">
+    </section>
+    <section id="projects">
+        <h2>Some Projects I worked on</h2>
+        <div class="project">
+            <h3>Ponion: Money transaction platform</h3>
+            <p>Transaction platform to solve problem of Currency divisiblility.</p>
+            <p><strong>Technologies:</strong> Python (Flask, Socket), JSON, Twillo, Google Cloud (Gmail API)</p>
+            <p><strong>Features:</strong> cart functionality, sigup and Login, email Verification, phone Number Verification, Database.</p>
+            <p><a href="https://github.com/winnyblackstart/">Private for Now visit my Githup instead</a></p>
+            <button class="collapsible-btn" onclick="toggleGallery('gallery3')">Show Images</button>
+            <div class="image-gallery" id="gallery3">
+                <img src="static/template1.png" alt="Ponion">
+                <img src="static/template2.png" alt="Ponion">
+                <img src="static/template3.png" alt="Ponion">
+                <img src="static/template4.png" alt="Ponion">
+                <img src="static/template5.png" alt="Ponion">
+            </div>
+        </div>
+        <div class="project">
+            <h3>Data Analysis: Freelance at Coveriot SARL</h3>
+            <p>A platform to visualize data collected from the security system with responsive mouse interactions.</p>
+            <p><strong>Technologies:</strong> wxPython, matplotlib</p>
+            <p><strong>Features:</strong> responsive mouse interactions, real-time updates.</p>
+            <p><a href="https://github.com/winnyblackstart/">Not allow to publish Go to my Githup instead</a></p>
+            <button class="collapsible-btn" onclick="toggleGallery('gallery1')">Show Images</button>
+            <div class="image-gallery" id="gallery1">
+                <img src="static/plot7.png" alt="Plot 7">
+                <img src="static/plot8.png" alt="Plot 8">
+                <img src="static/plot6.png" alt="Plot 6">
+                <img src="static/plot6.png" alt="Plot 5">
+            </div>
+        </div>
+        <div class="project">
+            <h3>Quizz Web page: Quiz platform form my student</h3>
+            <p>A Python-based quiz website with front and backend.</p>
+            <p><strong>Technologies:</strong> Flask, SQLAlchemy</p>
+            <p><strong>Features:</strong> Dynamic question display,scoring, responsive design, certificate generation.</p>
+            <p><a href="https://winny.pythonanywhere.com/">Live Demo</a> | <a href="https://github.com/winnyblackstart/Quizz">Github Repository</a></p>
+            <button class="collapsible-btn" onclick="toggleGallery('gallery2')">Show Images</button>
+            <div class="image-gallery" id="gallery2">
+                <img src="static/quizzy1.png" alt="Quizzy 1">
+                <img src="static/quizzy2.png" alt="Quizzy 2">
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> Python, JavaScript, HTML5, CSS3</li>
+            <li><strong>Frameworks:</strong> Flask</li>
+            <li><strong>Databases:</strong> MySQL, MongoDB, SQLite</li>
+            <li><strong>Tools:</strong> Git, Buildozer, VS Code, jupyter</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:winnyblackstart@gmail.com">winnyblackstart@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/etchike-hugues-winny-lyonnais-9770402b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> Go to my LinkedIn Profile</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/winnyblackstart/">https://github.com/winnyblackstart/</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Etchike Hugues Winny Lyonnais. All rights reserved. | 
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">License</a>
+</p>
+    </footer>
+    <script>
+        function toggleGallery(id) {
+            const gallery = document.getElementById(id);
+            const button = gallery.previousElementSibling;
+            if (gallery.style.maxHeight) {
+                gallery.style.maxHeight = null;
+                button.textContent = 'Show Images';
+            } else {
+                gallery.style.maxHeight = gallery.scrollHeight + 'px';
+                button.textContent = 'Hide Images';
+            }
+        }
+    </script>
+</body>
+</html>
