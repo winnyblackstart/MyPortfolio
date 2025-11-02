@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winny's - Portfolio</title>
+    <style>
+        /* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f7fc;
+    color: #212529;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #004080, #00509e);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-bottom: 4px solid #ffcc00;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(90deg, #00509e, #007bff);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 20px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #ffcc00;
+    color: #004080;
+}
+
+/* Main Section */
+section {
+    width: 85%;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-left: 5px solid #00aaff;
+    border-right: 5px solid #008080;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #004080;
+    border-bottom: 3px solid #00509e;
+    padding-bottom: 8px;
+}
+
+/* Project Section */
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #ffcc00;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.project p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 6px 12px;
+    background: #ffcc00;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.project a:hover {
+    background: #008080;
+    color: white;
+}
+
+/* Collapsible Section */
+.collapsible-btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 12px 18px;
+    font-size: 1rem;
+    color: white;
+    background: #007BFF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.collapsible-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Image Gallery */
+.image-gallery {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 420px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    background: linear-gradient(135deg, #004080, #002040);
+    color: white;
+    font-size: 1rem;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 8px 0;
+    opacity: 0.8;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00aaff;
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Etchike H.W Lyonnais</h1>
+        <p>Python Developer | Full Stack Dev</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+    <h2>About Me</h2>
+    <p>Passionate Python developer with 2+ years of experience building full-stack web applications and data tools. Skilled in Flask, Kivy, and cloud APIs, with a focus on solving real-world problems like financial inclusivity and data accessibility. Fluent in English and French. </p>
+    
+    <h3>Background</h3>
+    <p>Black African, Cameroonian</p>
+    
+    <h3>My Journey</h3>
+    <p>I started learning programming back in 2019. Since then, I’ve worked on hundreds of personal projects, including personal and Professional projects. I had the opportunity to work as a freelancer for Coveriot in Cameroon.I find it exciting and hope to collaborate with you!</p>
+    
+    <h3>My Aims</h3>
+    <ul>
+        <li>Bringing tech solutions to the world</li>
+        <li>Learn more </li>
+        <li>Make everyone's life easier</li>
+    </ul>
+    
+    <h3>What I Like</h3>
+    <ul>
+        <li>Quantum physics</li>
+        <li>Programming</li>
+        <li>Aeronautics and Aerospace</li>
+    </ul>
+    
+    <h3>My Hobbies</h3>
+    <ul>
+        <li>Playing around with electronics and programming</li>
+        <li>Watching Anime</li>
+        <li>Playing video games</li>
+        <li>Thinking of uncommon events for fun</li>
+    </ul>
+        
+    <h3>Education</h3>
+        <h4>GBPYS Yaounde</h4>
+            <p>Certificat obtained : <strong>Advanced Level (Science further mathematics)</strong></p>
+        <br>
+        <h4>Michigan Python for everybody</h4>
+            <a href='https://www.coursera.org/account/accomplishments/records/ZU85PYAU7SRD'>visit site instead</a>
+            <p>Certificat obtained : <strong>Python certificate</strong></p>
+            <embed src="static/python2.pdf" width="100%" height="200px" type="application/pdf">
+        <h4>Simplilearn</h4>
+            <p>Certificat obtained : <strong>Python certificate</strong></p>
+            <embed src="static/python.pdf" width="100%" height="200px" type="application/pdf">
+    </section>
+    <section id="projects">
+        <h2>Work Experience</h2>
+        <div class="project">
+            <h3>Ongoing ; </h3>
+            <p>MeExam, Allbooks, BillingIn</p>
+            <p><strong>Technologies:</strong> ...</p>
+            <p><strong>Features:</strong> ... </p>
+            <p><a href="#">Not published for now</a> </p>
+            <button class="collapsible-btn" onclick="toggleGallery('gallery7')">Show Images</button>
+            <div class="image-gallery" id="gallery7">
+                <img src="static/cardw1.png" alt="Card Battle 1">
+            </div>
+        </div>
+        <div class="project">
+            <h3>Card Battle game: web plateforme to battle with cards</h3>
+            <p>This is a web application that was inspired by Poketmon</p>
+            <p><strong>Technologies:</strong> JavaScript</p>
+            <p><strong>Features:</strong> Caching</p>
+            <p><a href="https://cardwarrior.netlify.app/">Live Demo</a> </p>
+            <button class="collapsible-btn" onclick="toggleGallery('gallery9')">Show Images</button>
+            <div class="image-gallery" id="gallery9">
+                <img src="static/cardw1.png" alt="Card Battle 1">
+            </div>
+        </div>
+        <div class="project">
+            <h3>Dating AI: web plateforme to chat with cute and friendly AI (for sale)</h3>
+            <p>This is a web application on sale on up work. Have romantic interaction with AI.</p>
+            <p><strong>Technologies:</strong> JavaScript, AI model integration,</p>
+            <p><strong>Features:</strong> Progress chat stage , API.</p>
+            <p><a href="https://myais.netlify.app">Live Demo</a> </p>
+            <button class="collapsible-btn" onclick="toggleGallery('gallery6')">Show Images</button>
+            <div class="image-gallery" id="gallery6">
+                <video controls width="100%" height="400px">
+                    <source src="static/chatapp.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Acounting app for small Busines: Companies register and employer can manage his resource, see daily reports and more</h3>
+            <p> A PWA App called CFA</p>
+            <p><strong>Technologies:</strong> service worker, </p>
+            <p><strong>Features:</strong> Role management</p>
+            <p><a href="https://cynozafa.netlify.app">live</a></p>
+            <p>to log in use enterprise_id: 2dc9a6d6-8b17-4784-85e1-498b5397164f employee pass boss: 34bfb633-d7fd-4edd-9c5d-fabc43e49899 employee pass sec: 87afdbff-4f4e-497e-8aa8-026e34814e8f</p>
+            <button class="collapsible-btn" onclick="toggleGallery('gallery8')">Show Images</button>
+            <div class="image-gallery" id="gallery8">
+                <img src="static/cfa1.png" alt="cfa 1">
+                <img src="static/cfa2.png" alt="cfa 2">
+                <img src="static/cfa3.png" alt="cfa 3">
+                <img src="static/cfa4.png" alt="cfa 4">
+            </div>
+        </div>
+        <div class="project">
+            <h3>Data Analysis: Freelance for Simracers-place ( Completed)</h3>
+            <p> Built a Kivy app to automate JSON-to-Excel conversion, saving 30+ hours/week for 15+ users.</p>
+            <p><strong>Technologies:</strong> kivy, pandas, Json</p>
+            <p><strong>Features:</strong> file traking and error handle, .</p>
+            <p><a href="https://github.com/winnyblackstart/">Not allow to publish Go to my Githup instead</a></p>
+            <button class="collapsible-btn" onclick="toggleGallery('gallery5')">Show Images</button>
+            <div class="image-gallery" id="gallery5">
+                <img src="static/simR1.png" alt="Ponion">
+                <img src="static/simR2.png" alt="Ponion">
+                <img src="static/simR3.png" alt="Ponion">
+                <img src="static/simR4.png" alt="Ponion">
+                <img src="static/simR5.png" alt="Ponion">
+            </div>
+        </div>
+        <div class="project">
+            <h3>TechBook: An app with kivy for software books (incomplete)</h3>
+            <p>A multiplatform app with kivy just like a not me book you can draw and write.</p>
+            <p><strong>Technologies:</strong> kivy, Json</p>
+            <p><strong>Features:</strong> local storage handling , Rendering.</p>
+            <p><a href="https://github.com/winnyblackstart/">Will be soon available Go to my Githup instead</a></p>
+            <button class="collapsible-btn" onclick="toggleGallery('gallery4')">Show Images</button>
+            <div class="image-gallery" id="gallery4">
+                <video controls>
+                    <source src="static/bookApp.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Ponion: Money transaction platform (In development)</h3>
+            <p>
+                <li> Developed a Flask-based platform solving currency divisibility issues in Cameroon, using <strong>Twilio SMS</strong> and <strong>Google Cloud</strong> for secure authentication.</li>
+                <li> Implemented cart functionality, user auth, and database management; reduced transaction errors by <strong>25%</strong>.</li>
+            </p>
+            <p><strong>Technologies:</strong> Python (Flask, Socket), JSON, Twillo, Google Cloud (Gmail API)</p>
+            <p><strong>Features:</strong> cart functionality, sigup and Login, email Verification, phone Number Verification, Database.</p>
+            <p><a href="https://github.com/winnyblackstart/">Private for Now visit my Githup instead</a></p>
+            <button class="collapsible-btn" onclick="toggleGallery('gallery3')">Show Images</button>
+            <div class="image-gallery" id="gallery3">
+                <img src="static/template1.png" alt="Ponion">
+                <img src="static/template2.png" alt="Ponion">
+                <img src="static/template3.png" alt="Ponion">
+                <img src="static/template4.png" alt="Ponion">
+                <img src="static/template5.png" alt="Ponion">
+            </div>
+        </div>
+        <div class="project">
+            <h3>Data Analysis: Freelance at Coveriot SARL</h3>
+            <p><li>Built a real-time data visualization platform for security systems using <strong>wxPython</strong> and <strong>Matplotlib</strong>, reducing data analysis time by 90% for 50+ users.</li>
+                <li> Integrated responsive UI components and mouse-tracking features to improve user interaction efficiency.</li></p>
+            <p><strong>Technologies:</strong> wxPython, matplotlib</p>
+            <p><strong>Features:</strong> responsive mouse interactions, real-time updates.</p>
+            <p><a href="https://github.com/winnyblackstart/">Not allow to publish Go to my Githup instead</a></p>
+            <button class="collapsible-btn" onclick="toggleGallery('gallery1')">Show Images</button>
+            <div class="image-gallery" id="gallery1">
+                <img src="static/plot7.png" alt="Plot 7">
+                <img src="static/plot8.png" alt="Plot 8">
+                <img src="static/plot6.png" alt="Plot 6">
+                <img src="static/plot6.png" alt="Plot 5">
+            </div>
+        </div>
+        <div class="project">
+            <h3>Quizz Web page: Quiz platform form my student</h3>
+            <p>Created a full-stack quiz app with dynamic scoring and certificate generation, 500+ questions in database serving 200 random questions.</p>
+            <p><strong>Technologies:</strong> Flask, SQLAlchemy</p>
+            <p><strong>Features:</strong> Dynamic question display,scoring, responsive design, certificate generation.</p>
+            <p><a href="https://winny.pythonanywhere.com/">Live Demo</a> | <a href="https://github.com/winnyblackstart/Quizz">Github Repository</a></p>
+            <p><a href="yu.jg">quiz questions 200 enter name test to answer only 3 questions</a></p>
+            <button class="collapsible-btn" onclick="toggleGallery('gallery2')">Show Images</button>
+            <div class="image-gallery" id="gallery2">
+                <img src="static/quizzy1.png" alt="Quizzy 1">
+                <img src="static/quizzy2.png" alt="Quizzy 2">
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Programming Languages: </strong> Python, JavaScript, HTML5, CSS3</li>
+            <li><strong>Frameworks: </strong> Flask, kivy, wxpython</li>
+            <li><strong>Databases: </strong> MySQL, MongoDB, SQLite</li>
+            <li><strong>Tools: </strong> Git, Buildozer, VS Code, jupyter, API</li>
+            <li><strong>Languages: </strong> English (Professional), French (Native)</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:winnyblackstart@gmail.com">winnyblackstart@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/etchike-hugues-winny-lyonnais-9770402b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> Go to my LinkedIn Profile</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/winnyblackstart/">https://github.com/winnyblackstart/</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Etchike Hugues Winny Lyonnais. All rights reserved. | 
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">License</a>
+</p>
+    </footer>
+    <script>
+        function toggleGallery(id) {
+            const gallery = document.getElementById(id);
+            const button = gallery.previousElementSibling;
+            if (gallery.style.maxHeight) {
+                gallery.style.maxHeight = null;
+                button.textContent = 'Show Images';
+            } else {
+                gallery.style.maxHeight = gallery.scrollHeight + 'px';
+                button.textContent = 'Hide Images';
+            }
+        }
+    </script>
+</body>
+</html>
